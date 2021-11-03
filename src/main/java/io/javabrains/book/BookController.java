@@ -11,7 +11,7 @@ import java.util.Optional;
 @Controller
 public class BookController {
 
-    private final String COVER_IMG_ROOT = "http://covers.openlibrary.org/b/id/";
+    private static final String COVER_IMG_ROOT = "http://covers.openlibrary.org/b/id/";
 
     @Autowired
     BookRepository bookRepository;

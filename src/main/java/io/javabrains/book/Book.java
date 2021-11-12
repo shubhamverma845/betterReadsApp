@@ -44,6 +44,4 @@ public class Book {
     @Column("author_ids")
     @CassandraType(type = CassandraType.Name.LIST, typeArguments = CassandraType.Name.TEXT)
     private List<String> authorIds;
-
-
 }

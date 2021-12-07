@@ -42,7 +42,7 @@ public class UserBooksController {
         Optional<Book> optionalBook = bookRepository.findById(bookId);
 
         if(optionalBook.isEmpty()){
-            return new ModelAndView("redirec:/");
+            return new ModelAndView("redirect:/");
         }
 
         Book book = optionalBook.get();
